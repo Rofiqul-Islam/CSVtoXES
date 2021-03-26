@@ -40,9 +40,8 @@ public class ConverterService {
                 testModel.setCaseId(itr.nextToken());
                 caseIdSet.add(testModel.getCaseId());
                 testModel.setEventId(itr.nextToken());
-                testModel.setOccuranceTime(itr.nextToken());
                 testModel.setActivity(itr.nextToken());
-                testModel.setOther(itr.nextToken());
+                //testModel.setOther(itr.nextToken());
                 testRepository.save(testModel);
 
             }
@@ -61,29 +60,16 @@ public class ConverterService {
     public void createXes() {
         FileWriter myWriter = null;
         try {
-            myWriter = new FileWriter("output.txt");
+            myWriter = new FileWriter("output.xes");
             myWriter.write("<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n" +
                     "<!-- XES version 1.0 -->\n" +
-                    "<!-- Created by Fluxicon Nitro (http://fluxicon.com/nitro/ -->\n" +
-                    "<!-- (c) 2010 Fluxicon Process Laboratories / http://fluxicon.com/ -->\n" +
                     "<log xes.version=\"1.0\" xmlns=\"http://code.deckfour.org/xes\" xes.creator=\"Fluxicon Nitro\">\n" +
                     "\t<extension name=\"Concept\" prefix=\"concept\" uri=\"http://code.deckfour.org/xes/concept.xesext\"/>\n" +
                     "\t<extension name=\"Time\" prefix=\"time\" uri=\"http://code.deckfour.org/xes/time.xesext\"/>\n" +
                     "\t<extension name=\"Organizational\" prefix=\"org\" uri=\"http://code.deckfour.org/xes/org.xesext\"/>\n" +
-                    "\t<global scope=\"trace\">\n" +
-                    "\t\t<string key=\"concept:name\" value=\"name\"/>\n" +
-                    "\t</global>\n" +
-                    "\t<global scope=\"event\">\n" +
-                    "\t\t<string key=\"concept:name\" value=\"name\"/>\n" +
-                    "\t\t<string key=\"org:resource\" value=\"resource\"/>\n" +
-                    "\t\t<date key=\"time:timestamp\" value=\"2011-04-13T14:02:31.199+02:00\"/>\n" +
-                    "\t\t<string key=\"Activity\" value=\"string\"/>\n" +
-                    "\t\t<string key=\"Resource\" value=\"string\"/>\n" +
-                    "\t\t<string key=\"Costs\" value=\"string\"/>\n" +
-                    "\t</global>\n" +
+                    "\t\n" +
                     "\t<classifier name=\"Activity\" keys=\"Activity\"/>\n" +
-                    "\t<classifier name=\"activity classifier\" keys=\"Activity\"/>\n" +
-                    "\t<string key=\"creator\" value=\"Fluxicon Nitro\"/>\n");
+                    "\t<classifier name=\"activity classifier\" keys=\"Activity\"/>\n");
         } catch (IOException e) {
             e.printStackTrace();
         }

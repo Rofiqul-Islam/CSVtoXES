@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- XES version 1.0 -->
+<log xes.version="1.0" xmlns="http://code.deckfour.org/xes" xes.creator="Fluxicon Nitro">
+	<extension name="Concept" prefix="concept" uri="http://code.deckfour.org/xes/concept.xesext"/>
+	<extension name="Time" prefix="time" uri="http://code.deckfour.org/xes/time.xesext"/>
+	<extension name="Organizational" prefix="org" uri="http://code.deckfour.org/xes/org.xesext"/>
+	
+	<classifier name="Activity" keys="Activity"/>
+	<classifier name="activity classifier" keys="Activity"/>
+	<trace>
+		<string key="concept:name" value="22"/>
+		<event>
+			<string key="concept:name" value="person finding request with id"/>
+			<string key="Activity" value="person finding request with id"/>
+		</event>
+		<event>
+			<string key="concept:name" value="service called for finding person"/>
+			<string key="Activity" value="service called for finding person"/>
+		</event>
+		<event>
+			<string key="concept:name" value="database find operation"/>
+			<string key="Activity" value="database find operation"/>
+		</event>
+
+	</trace>
+	<trace>
+		<string key="concept:name" value="26"/>
+		<event>
+			<string key="concept:name" value="service called for finding person"/>
+			<string key="Activity" value="service called for finding person"/>
+		</event>
+		<event>
+			<string key="concept:name" value="database find operation"/>
+			<string key="Activity" value="database find operation"/>
+		</event>
+
+	</trace>
+	<trace>
+		<string key="concept:name" value="18"/>
+		<event>
+			<string key="concept:name" value="service called for update person"/>
+			<string key="Activity" value="service called for update person"/>
+		</event>
+		<event>
+			<string key="concept:name" value="database operation to find existing person"/>
+			<string key="Activity" value="database operation to find existing person"/>
+		</event>
+		<event>
+			<string key="concept:name" value="database update operation"/>
+			<string key="Activity" value="database update operation"/>
+		</event>
+
+	</trace>
+	<trace>
+		<string key="concept:name" value="1"/>
+		<event>
+			<string key="concept:name" value="request for login"/>
+			<string key="Activity" value="request for login"/>
+		</event>
+		<event>
+			<string key="concept:name" value="service called for login"/>
+			<string key="Activity" value="service called for login"/>
+		</event>
+		<event>
+			<string key="concept:name" value="database query to check email and password validity"/>
+			<string key="Activity" value="database query to check email and password validity"/>
+		</event>
+		<event>
+			<string key="concept:name" value="login result sent"/>
+			<string key="Activity" value="login result sent"/>
+		</event>
+
+	</trace>
+	<trace>
+		<string key="concept:name" value="2"/>
+		<event>
+			<string key="concept:name" value="check for person validity"/>
+			<string key="Activity" value="check for person validity"/>
+		</event>
+		<event>
+			<string key="concept:name" value="database person delete operation"/>
+			<string key="Activity" value="database person delete operation"/>
+		</event>
+		<event>
+			<string key="concept:name" value="service called for delete person"/>
+			<string key="Activity" value="service called for delete person"/>
+		</event>
+
+	</trace>
+	<trace>
+		<string key="concept:name" value="3"/>
+		<event>
+			<string key="concept:name" value="person data update request"/>
+			<string key="Activity" value="person data update request"/>
+		</event>
+		<event>
+			<string key="concept:name" value="service called for update person"/>
+			<string key="Activity" value="service called for update person"/>
+		</event>
+		<event>
+			<string key="concept:name" value="database operation to find existing person"/>
+			<string key="Activity" value="database operation to find existing person"/>
+		</event>
+		<event>
+			<string key="concept:name" value="database update operation"/>
+			<string key="Activity" value="database update operation"/>
+		</event>
+
+	</trace>
+	<trace>
+		<string key="concept:name" value="6"/>
+		<event>
+			<string key="concept:name" value="database persistant operation"/>
+			<string key="Activity" value="database persistant operation"/>
+		</event>
+		<event>
+			<string key="concept:name" value="register service"/>
+			<string key="Activity" value="register service"/>
+		</event>
+
+	</trace>
+	<trace>
+		<string key="concept:name" value="7"/>
+		<event>
+			<string key="concept:name" value="request for find all person"/>
+			<string key="Activity" value="request for find all person"/>
+		</event>
+		<event>
+			<string key="concept:name" value="service called for find all person"/>
+			<string key="Activity" value="service called for find all person"/>
+		</event>
+		<event>
+			<string key="concept:name" value="database operation to find all person"/>
+			<string key="Activity" value="database operation to find all person"/>
+		</event>
+
+	</trace>
+	<trace>
+		<string key="concept:name" value="9"/>
+		<event>
+			<string key="concept:name" value="person register request"/>
+			<string key="Activity" value="person register request"/>
+		</event>
+		<event>
+			<string key="concept:name" value="database persistant operation"/>
+			<string key="Activity" value="database persistant operation"/>
+		</event>
+		<event>
+			<string key="concept:name" value="register service"/>
+			<string key="Activity" value="register service"/>
+		</event>
+
+	</trace>
+	<trace>
+		<string key="concept:name" value="30"/>
+		<event>
+			<string key="concept:name" value="service called for login"/>
+			<string key="Activity" value="service called for login"/>
+		</event>
+		<event>
+			<string key="concept:name" value="database query to check email and password validity"/>
+			<string key="Activity" value="database query to check email and password validity"/>
+		</event>
+		<event>
+			<string key="concept:name" value="login result sent"/>
+			<string key="Activity" value="login result sent"/>
+		</event>
+
+	</trace>
+	<trace>
+		<string key="concept:name" value="20"/>
+		<event>
+			<string key="concept:name" value="service called for find all person"/>
+			<string key="Activity" value="service called for find all person"/>
+		</event>
+		<event>
+			<string key="concept:name" value="database operation to find all person"/>
+			<string key="Activity" value="database operation to find all person"/>
+		</event>
+
+	</trace>
+	<trace>
+		<string key="concept:name" value="10"/>
+		<event>
+			<string key="concept:name" value="request for delete existing person"/>
+			<string key="Activity" value="request for delete existing person"/>
+		</event>
+		<event>
+			<string key="concept:name" value="check for person validity"/>
+			<string key="Activity" value="check for person validity"/>
+		</event>
+		<event>
+			<string key="concept:name" value="database person delete operation"/>
+			<string key="Activity" value="database person delete operation"/>
+		</event>
+		<event>
+			<string key="concept:name" value="service called for delete person"/>
+			<string key="Activity" value="service called for delete person"/>
+		</event>
+
+	</trace>
+</log>

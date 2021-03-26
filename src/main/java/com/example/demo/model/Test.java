@@ -19,9 +19,6 @@ public class Test {
     private String eventId;
 
     @Column
-    private String occuranceTime;
-
-    @Column
     private String activity;
 
     @Column
@@ -52,14 +49,6 @@ public class Test {
         this.eventId = eventId;
     }
 
-    public String getOccuranceTime() {
-        return occuranceTime;
-    }
-
-    public void setOccuranceTime(String occuranceTime) {
-        this.occuranceTime = occuranceTime;
-    }
-
     public String getActivity() {
         return activity;
     }
@@ -80,10 +69,9 @@ public class Test {
     public String toString() {
         return "\t\t<event>\n" +
                 "\t\t\t<string key=\"concept:name\" value=\""+activity+"\"/>\n" +
-                "\t\t\t<string key=\"org:resource\" value=\""+other+"\"/>\n" +
-                "\t\t\t<date key=\"time:timestamp\" value=\""+occuranceTime+"\"/>\n" +
+                //"\t\t\t<string key=\"org:resource\" value=\""+other+"\"/>\n" +
                 "\t\t\t<string key=\"Activity\" value=\""+activity+"\"/>\n" +
-                "\t\t\t<string key=\"Others\" value=\""+other+"\"/>\n" +
+                //"\t\t\t<string key=\"Others\" value=\""+other+"\"/>\n" +
                 "\t\t</event>\n";
     }
 }
